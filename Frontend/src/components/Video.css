@@ -1,0 +1,53 @@
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .video-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: -3rem;
+  }
+  
+  .video {
+    flex: 1 1 45%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  /* Additional CSS to adjust iframe title alignment */
+  .video iframe {
+    display: block; /* Ensures iframe behaves like a block-level element */
+    margin: 0 auto; /* Centers iframe horizontally within its container */
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+  }
+  
+  .video iframe:hover {
+    transform: scale(1.1); /* Scale up the iframe on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .video-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    /* Mobile-specific styles */
+    .video iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
