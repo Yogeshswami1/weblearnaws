@@ -29,31 +29,37 @@
 // export default sendMail;
 
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
+  port: 587, // Port 587 is typically used for TLS
   secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
-    user: "yogeshkumar86077@gmail.com",
-    pass: "nmlmmebigqzfzsvy",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
 async function sendMail(to, subject, text, html) {
-  const info = await transporter.sendMail({
-    from: 'yogeshkumar86077@gmail.com', // sender address
-    to,
-    subject,
-    text,
-    html,
-  });
+  try {
+    const info = await transporter.sendMail({
+      from: process.env.EMAIL_USER, // sender address
+      to,
+      subject,
+      text,
+      html,
+    });
 
-  console.log("Message sent: %s", info.messageId);
+    console.log("Message sent: %s", info.messageId);
+  } catch (error) {
+    console.error("Error sending email: %s", error);
+  }
 }
 
 export { sendMail };
-
-
 
 // 
 
