@@ -17,6 +17,7 @@ import image14 from '../assets/image14.png';
 const Regular = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
