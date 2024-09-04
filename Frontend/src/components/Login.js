@@ -526,7 +526,7 @@ const Login = ({ onLogin }) => {
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-md-9 col-lg-6 col-xl-5">
             <img
-              src="https://saumiccraft.com/wp-content/uploads/2023/06/S-C-Logo-300x205.png"
+              src="https://saumiccraft.com/wp-content/uploads/2024/06/S-C-Logo.png"
               className="img-fluid"
               alt="Sample"
             />

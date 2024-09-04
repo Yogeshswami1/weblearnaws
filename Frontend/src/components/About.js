@@ -795,7 +795,7 @@ const About = () => {
           </VideoContainer>
         ))}
       </VideoGrid>
-      <DriveButton onClick={() => window.open("https://drive.google.com/drive/folders/1AkHseUISEX109rGIrraT79CwDxUQ-eff", "_blank")}>
+      <DriveButton onClick={() => window.open("https://drive.google.com/drive/folders/1LTSmQm7WDvgWkcRCAl_ZzhKOP55UG5gE", "_blank")}>
         View More Videos
       </DriveButton>
       <Heading style={{marginTop:"2rem"}}>4k Videos</Heading>
@@ -809,7 +809,7 @@ const About = () => {
           </VideoContainer>
         ))}
       </SliderContainer>
-      <DriveButton onClick={() => window.open("https://drive.google.com/drive/folders/1xpLmwyOtoHDrwe4I9KQCrulnxYem_iiq")}>
+      <DriveButton onClick={() => window.open("https://drive.google.com/drive/folders/1kxWpVt0hkqSJcdQEQSBU46uqNt4bKJo2")}>
         View More Videos
       </DriveButton>
       <Heading style={{marginTop:"2rem"}}>Photos</Heading>

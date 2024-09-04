@@ -105,7 +105,7 @@ const Navbar = () => {
         </Header>
         <NavbarContent>
           <Logo>
-            <LogoImage src="https://saumiccraft.com/wp-content/uploads/2023/06/S-C-Logo-300x205.png" alt="Logo" />
+            <LogoImage src="https://saumiccraft.com/wp-content/uploads/2024/06/S-C-Logo.png" alt="Logo" />
           </Logo>
           <ToggleButton onClick={toggleNavLinks} style={{ marginTop: "3rem" }}>
             ☰
